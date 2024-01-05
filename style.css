@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Cyan: hsl(180, 66%, 49%);
+  --Dark--Violet: hsl(257, 27%, 26%);
+  --Red: hsl(0, 87%, 67%);
+
+  --Gray: hsl(0, 0%, 75%);
+  --Grayish--Violet: hsl(257, 7%, 63%);
+  --Very--Dark--Blue: hsl(255, 11%, 22%);
+  --Very--Dark--Violet: hsl(260, 8%, 14%);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  scroll-behavior: smooth;
+}
+
+img,
+span,
+svg {
+  display: block;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: none;
+  background: none;
+  font: inherit;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1440px;
+  margin: auto;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 18px;
+}
+
+.navbar-toggle-btn {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 0 20px;
+}
+
+.navbar-toggle-btn span {
+  display: block;
+  background: var(--Very--Dark--Blue);
+  width: 25px;
+  height: 1px;
+  transition: 0.25s ease;
+}
+
+.navbar-toggle-btn.active .one {
+  transform: rotate(45deg) translateY(3px);
+}
+
+.navbar-toggle-btn.active .two {
+  display: none;
+}
+
+.navbar-toggle-btn.active .three {
+  transform: rotate(-45deg) translateY(-3px);
+}
+
+.navbar-links {
+  position: fixed;
+
+  top: 60px;
+  left: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 40px 0;
+  border-radius: 5px;
+  z-index: -1;
+  opacity: 0;
+  transition: 0.5s ease;
+  pointer-events: none;
+}
+
+.navbar-links a {
+  color: white;
+  display: block;
+}
+
+.navbar-links.active {
+  top: calc(60px + 20px);
+  opacity: 1;
+  box-shadow: 0 0 100px 100px hsla(240, 9%, 91%, 0.2);
+  background: var(--Dark--Violet);
+  pointer-events: all;
+}
+
+.links-btn button {
+  color: white;
+}
+
+.links-btnb button {
+  padding: 0.7rem 7rem;
+  font-size: 1rem;
+  border-radius: 30px;
+  color: white;
+  font-weight: 15px;
+  display: block;
+  margin: auto;
+  transition: 0.2s ease;
+  background: var(--Cyan);
+}
+
+.links-btnb button:hover {
+  opacity: 0.6;
+  transition: opacity 0.3s ease-out;
+  color: #fff;
+}
+
+.navbar-links hr {
+  width: 300px;
+
+  border-color: var(--Gray);
+}
