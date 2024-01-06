@@ -69,4 +69,120 @@
   .navbar-links a:hover {
     color: var(--Very--Dark--Blue);
   }
+
+  .shorter-links {
+    display: flex;
+    margin-left: 4rem;
+    padding-left: 18px;
+    margin-top: 4rem;
+  }
+
+  .shorter-links-content {
+    width: 40%;
+    margin-top: 4rem;
+  }
+
+  .shorter-links-content h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-top: 4rem;
+    margin-bottom: 0.5rem;
+    color: var(--Very--Dark--Blue);
+  }
+
+  .shorter-links-content p {
+    color: var(--Grayish--Violet);
+    margin-bottom: 1.5rem;
+  }
+
+  .shorter-links-btn {
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    border-radius: 30px;
+    color: white;
+    font-weight: 15px;
+    display: block;
+    margin: auto;
+    transition: 0.2s ease;
+    background: var(--Cyan);
+    margin-left: 0;
+  }
+
+  .shorter-links-btn:hover {
+    opacity: 0.6;
+    transition: opacity 0.3s ease-out;
+    color: #fff;
+  }
+
+  .shorter-links-image {
+    width: 55%;
+    margin-left: 5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .shorter-links {
+    display: flex;
+    margin: 0;
+    margin-left: 1rem;
+    flex-direction: column-reverse;
+    padding: 0;
+    margin-top: 5rem;
+    overflow-x: hidden;
+  }
+
+  .shorter-links-content {
+    width: 100%;
+    margin-top: 3rem;
+  }
+
+  .shorter-links-content h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--Very--Dark--Violet);
+    width: 100%;
+  }
+
+  .shorter-links-content p {
+    color: var(--Grayish--Violet);
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+    text-align: center;
+    margin-right: 1rem;
+  }
+
+  .shorter-links-content p br {
+    display: none;
+  }
+
+  .shorter-links-image {
+    width: 100%;
+    margin-left: 2rem;
+  }
+
+  .shorter-links-image img {
+    width: 120%;
+  }
+
+  .shorter-links-btn {
+    padding: 0.8rem 3rem;
+    font-size: 1rem;
+    border-radius: 30px;
+    color: white;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 0.2s ease;
+    background: var(--Cyan);
+  }
+
+  .shorter-links-btn:hover {
+    opacity: 0.6;
+    transition: opacity 0.3s ease-out;
+    color: #fff;
+  }
 }
